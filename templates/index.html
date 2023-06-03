@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit clone</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- used to show errors to the user -->
+    <div id="post-container"></div>
+    
+    <div class="dialogue" id="error"></div>
+    <div class="dialogue" id="success"></div>
+
+    <script type="module" src="{{ url_for('static', filename='dist/script.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='dist/post-element.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='dist/comment-element.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/module_fix.js') }}"></script>
+</body>
+</html>

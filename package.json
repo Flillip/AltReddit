@@ -1,0 +1,17 @@
+{
+  "name": "RedditClone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w &; python -m flask run --debug",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "bonnietogamer",
+  "license": "MIT",
+  "devDependencies": {
+    "tsc": "^2.0.4"
+  }
+}
